@@ -9,8 +9,8 @@ words_per_minute: 200
 baseurl: /
 
 # Website info
-title: Thomas Zhang
-description: Thomas Zhang
+title: tz
+description: Thomas Zhang's personal website
 cover: assets/images/blog-cover.jpg
 logo: assets/images/logo.png
 logo_dark: assets/images/favicon.png

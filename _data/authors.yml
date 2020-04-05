@@ -74,3 +74,14 @@ martin:
   facebook: False
   twitter: False
   cover: False
+thomas:
+  username: thomas
+  name: Thomas Zhang
+  location: San Francisco, California
+  url_full: False
+  url: False
+  bio: Full-stack software engineer
+  picture: assets/images/thomas.jpg
+  facebook: False
+  twitter: False
+  cover: False

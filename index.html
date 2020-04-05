@@ -1,20 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//
-          EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
-<!-- saved from url=(0028)https://www.thomaszhang.com/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="keywords" content="Thomas Zhang"><meta name="description" content=""><meta name="copyright" content="My site"><meta name="publisher" content="Thomas Zhang"><meta name="author" content="Thomas Zhang">
+---
+layout: default
+current: home
+class: 'home-template'
+navigation: True
+---
 
-<script data-ad-client="ca-pub-3899159760520070" async="" src="./index_files/f.txt"></script>
-	<title></title>
-	
-	<link href="./index_files/style.css" rel="stylesheet" type="text/css">
-</head>
-<body class="vsc-initialized">
-<div class="container">
-<h1>UNDER CONSTRUCTION</h1>
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
-<h2>Thomas Zhang</h2>
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {% if site.logo %}
+                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+            </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
+        </div>
+        {% include site-nav.html %}
+    </div>
+</header>
 
-<h2></h2>
-</div>
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
 
-</body></html>
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
+        </div>
+
+    </div>
+</main>
