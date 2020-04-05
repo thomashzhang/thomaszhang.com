@@ -79,6 +79,7 @@ source_url:  https://thomaszhang.com/
 
 exclude:
   - assets/css
+  - source
   - node_modules
   - vendor
   - .travis.yml
