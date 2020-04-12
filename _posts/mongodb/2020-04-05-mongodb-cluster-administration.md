@@ -130,6 +130,64 @@ To set the verbosity level of each of the comments through the shell, you can ru
 
 Most of the logs are relatively straight forward, but there a few things that are good to note. The very last parameter that say `<number>ms` is the number of milliseconds the action took - this could be very useful in debugging slow commands. The forth parameter that may look like `[conn3]` is essentially an identifier for the client. This means if this is the same in multiple logs, it was the same client that issue the command that generated the log.
 
+### Profiling
+
+For slow queries and performance issues, it's not enough to rely solely on the logs. The profiler has information on CRUD, administrative and configuration options.
+
+**Profiler settings**
+- 0 - profiler is off and doesn't collect any data. This is the default
+- 1 - profiler only collects operation that are slow (> 100 ms)
+- 2 - profiles ALL operations; this is a little dangerous as it's a LOT of data
+
+To get and set the profiling levels, use `db.getProfilingLevel()` and `db.setProfilingLevel(level)` respectively. Once the profiler is turned on (using the set command), a `system.profile` collection will appear.
+
+All of this can also be specified in the `mongod.conf` file like this:
+```
+operationProfiling:
+   mode: slowOp
+   slowOpThresholdMs: 50
+```
+
+### Authentication
+
+**Four types of authentication methods**
+- SCRAM - default (salted challenge response authentication mechanism). Basic password security
+- X.509 - uses X.509 certificate for authentication (harder to use, but probably more secure)
+- LDAP - enterprise authentication
+- Kerberos - enterprise authentication
+
+MongoDB also has intra-cluster authentication.
+
+MongoDB uses RBAC (role based access control)
+- Each user has one or more roles
+  - Each role has one or more privileges
+    - Each privilege defines a set of "actions" or a single action that can be performed over a resource
+
+When authentication is enabled, the MongoDB instance will let you authenticate without any credentials on localhost. BUT once you create a user, that will be no longer possible. The standard is to **always** create the administrator user first.
+
+Roles can also have network authentication restrictions such as only being able to connect from a defined IP address or range.
+
+**Built in roles**
+- Database User
+- Database Administration
+- Cluster Administration
+- Backup/Restore
+- Super User (root)
+
+Roles
+- `userAdmin` can only create and drop users, but cannot read/write any data (no data modifications)
+- `dbAdmin` can look at stats, indexes, collections, etc. but also cannot read/write any data (no data modifications)
+- `dbOwner` can perform any admin function on the database (including read/write). This role technically combines a couple of the other roles to form the dbOwner
+
+**Database tools**
+- mongod (already covered - main database process)
+- mongo (already covered - shell connection tool)
+- mongostat - quick statistics (ops/second, memory, cpu etc.)
+- mongodump - exports dump files in bson format
+- mongorestore - restores dump files from bson format
+- mongoexport - exports data as json (sends output to standard out)
+- mongoimport - imports data from json
+
 ## 2. Replication <a name="replication"></a>
 
 ## 3. Sharding <a name="sharding"></a>
