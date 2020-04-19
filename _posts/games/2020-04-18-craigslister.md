@@ -13,4 +13,4 @@ author: thomas
 
 Play as a user trying to sell their items on Craigslist!
 
-[Click here to play]({{ site.baseurl }}/assets/games/craigslister/)
+[Click here to play]({{ site.baseurl }}assets/games/craigslister/)
