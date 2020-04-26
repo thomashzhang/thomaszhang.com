@@ -19,9 +19,9 @@ You can download the desktop version of the game [here](https://github.com/thoma
 <script src="{{ site.baseurl }}assets/games/covid-ball/Build/UnityLoader.js"></script>
 <script>
   UnityLoader.Error.handler = function(e, t)
-{
+  {
     console.log(e);
-}
+  }
   UnityLoader.instantiate("unityContainer", "{{ site.baseurl }}assets/games/covid-ball/Build/webgl.json", {onProgress: UnityProgress});
 </script>
 <div class="webgl-content">
