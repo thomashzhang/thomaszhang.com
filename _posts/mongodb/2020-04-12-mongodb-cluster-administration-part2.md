@@ -88,3 +88,21 @@ Each of the members have a couple of configuration options, one of the important
 - `rs.isMaster()` tells us whether the node we're connected to is the master node
 - `db.serverStatus()` and specifically `db.serverStatus()['repl']` is similar to `rs.isMaster()` but includes the `rbid` the number of rollbacks that have occurred
 - `rs.printReplicationInfo()` returns oplog data relative to current node
+
+There are two default databases: `admin` (where all the admin commands need to be executed) and `local`. Generally, don't edit files in these databases. Note, anything written directly to `local` by the user will not be replicated.
+
+The `local` database contains `oplog.rs` when connecting to the replica set. This is important:
+- Capped collection: there's a max size the collection can be (5% of your free disk by default).
+
+The oplog size can also be configured as part of mongod.conf like this:
+
+```
+replication:
+  oplogSizeMB: 5MB
+``` 
+
+- Every node in the replica set contain an oplog
+- When a node gets disconnected and reconnected, the node will check which oplogs were the same in one of the available nodes and then reapply all operations since that point
+  - But when it can't find the operations (likely overwritten due to size limit), it'll be put in recovery mode
+- One update may become several entries in the oplog collection (because of idempotency) - an update many will produce many entries in an oplog
+- 
