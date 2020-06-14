@@ -13,7 +13,7 @@ author: thomas
 
 Defend your castle against waves of orcs, trolls and other attackers!
 
-To play, you must download from the Google Play Store (coming soon) or by going to the [release tab on github](https://github.com/thomashzhang/dungeon-fire/releases).
+To play, you must download from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ThomasZhang.DungeonFire) or by going to the [release tab on github](https://github.com/thomashzhang/dungeon-fire/releases).
 
 This game is completely open source, and feel free to contribute features [on github](https://github.com/thomashzhang/dungeon-fire).
 
