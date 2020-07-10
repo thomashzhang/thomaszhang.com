@@ -13,7 +13,20 @@ author: thomas
 
 As I go through course material, study sessions, exploratory sessions, I will list all of the terms that have come up in a master alphabetized glossary list.
 
-**Disclaimer**: These are notes I'm taking as I go through the material and I tend to summarize, paraphrase and add my own insights. Although I try to be as accurate as possible, there may be things I've misunderstood. Additionally, since I'm not writing a paper here, I may quote definitions I've found on various sites. If you see any mistakes and would like to fix them, please create a PR [here](https://github.com/thomashzhang/thomaszhang.com).
+**Disclaimer**: These are notes I'm taking as I go through the material and I tend to summarize, paraphrase and add my own insights. Although I try to be as accurate as possible, there may be things I've misunderstood. Additionally, since I'm not writing a paper here, I may quote definitions I've found on various sites. If you see any mistakes and would like to fix them, please create a PR [here](https://github.com/thomashzhang/thomaszhang.com). Also note that this may not be a complete list of terms.
 
 - **5 9's of Availability** - Uptime of 99.999% of the time. This means in a year only 5 minutes of downtime are expected (525600 - (525600 * 0.99999)).
-- **PAN (Personal Area Network)** - A type of network generally in a much smaller range. As an example, a bluetooth watch connected to your phone is considered a personal area network.
+- **AP or WAP (Access Point)** - "In computer networking, a wireless access point, or more generally just access point, is a networking hardware device that allows other Wi-Fi devices to connect to a wired network."
+- **CAN (Campus Area Network)** - This can cover several kilometers and can include multiple builds. Think college campuses. 
+- **Client** - A device used by the end user to access the network.
+- **Client/Server Model** - Dedicated server will serve resources to the client. This makes administration a lot easier as it is centralized but usually costs more money. This is used in business a lot today.
+- **Hub** - Connects network devices by taking in data and sending that data to all connected devices. This is not used for the most part today as switches are used more often.
+- **IEEE 802.11** - WiFi
+- **IEEE 802.3** - Ethernet
+- **LAN (Local Area Network)** - A type of network that is generally a around a few hundred meters. Think business - all those office devices are connected through a LAN.
+- **MAN (Metropolitan Area Network)** - Think up to 25 miles. An example would be the police department in a city or a bunch of college campuses.
+- **PAN (Personal Area Network)** - A type of network generally in a much smaller range (usually < 10 meters between connections). As an example, a bluetooth watch connected to your phone is considered a personal area network. USB connections are usually also considered a PAN.
+- **Peer-to-Peer Model** - Think torrents or Bitcoin. Each device connects to peer devices to share files and connect. The benefit is redundancy and lower costs as there's no server involved. 
+- **Server** - A device that clients can connect to and provide network functionality.
+- **Switch** - Like a hub, but forwards traffic only to the devices that are requested (and not a general broadcast).
+- **WAN (Wide Area Network)** - A type of network that physically connects two geographically separated network locations (ex. Los Angeles and San Francisco) and are connected through a tunnel. Two business in two different states can be connected through a WAN.
