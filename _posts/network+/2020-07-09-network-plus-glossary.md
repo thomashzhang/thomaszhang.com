@@ -5,7 +5,7 @@ cover: assets/images/network+/network_plus.jpg
 navigation: True
 title: Network+ Full Glossary of Terms
 date: 2020-07-09 10:30:00
-tags: network+, comptia
+tags: network+ comptia
 class: post-template
 subclass: 'post'
 author: thomas
