@@ -26,18 +26,24 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **Full-Mesh Topology** - Every node connects to every other node, very redundant, but there's a lot of connections.
 - **Hub** - Connects network devices by taking in data and sending that data to all connected devices. This is not used for the most part today as switches are used more often.
 - **Hub-and-Spoke Topology** - Like Star, but the end devices can also connect to different hubs. Think Star Topology, but the end devices can connect to more that one central device.
+- **ICMP (Internet Control Message Protocol)** - Think about the `ping` command. "The Internet Control Message Protocol is an internet layer protocol used by network devices to diagnose network communication issues. ICMP is mainly used to determine whether or not data is reaching its intended destination in a timely manner. Commonly, the ICMP protocol is used on network devices, such as routers."
 - **IEEE 802.11** - WiFi (a, b, g, n, ac)
 - **IEEE 802.3** - Ethernet
 - **IR (Infrared)** - Line of sight communication with the infrared frequency. Think remote controls.
 - **LAN (Local Area Network)** - A type of network that is generally a around a few hundred meters. Think business - all those office devices are connected through a LAN.
+- MAC (Media Access Control) - Physical addressing system where each Network Interface Card has a hardcoded 48-bit address.
 - **MAN (Metropolitan Area Network)** - Think up to 25 miles. An example would be the police department in a city or a bunch of college campuses.
 - **NFC (Near Field Communication)** - Shorter distance than RFID. Communication of two electronic devices within 4-cm range.
 - **PAN (Personal Area Network)** - A type of network generally in a much smaller range (usually < 10 meters between connections). As an example, a bluetooth watch connected to your phone is considered a personal area network. USB connections are usually also considered a PAN.
 - **Peer-to-Peer Model** - Think torrents or Bitcoin. Each device connects to peer devices to share files and connect. The benefit is redundancy and lower costs as there's no server involved. 
 - **Ring Topology** - Cable runs in a circular loop and each device is connect on the ring. Only when a token ring is obtained by the device, then the device can talk on the network. Also not used that often today.
 - **RFID (Radio Frequency ID)** - Electromagnetic to read data from a chip.
+- **RTP (Real-time Transport Protocol)** - Layer 5. "The Real-time Transport Protocol is a network protocol for delivering audio and video over IP networks. RTP is used in communication and entertainment systems that involve streaming media, such as telephony, video teleconference applications including WebRTC, television services and web-based push-to-talk features."
 - **Server** - A device that clients can connect to and provide network functionality.
 - **Star Topology** Devices are connected directly to a central device (think of a star pattern). Downside is if the central device goes down, the entire network goes down.
 - **Switch** - Like a hub, but forwards traffic only to the devices that are requested (and not a general broadcast).
+- **TCP (Transmission Control Protocol)** - Layer 4 protocol. Allows for reordering and ensure data is sent and not lost. Used for transmitting files and important data.
+- **TDM (Time-Division Multiplexing)** - For base-band models, all users use a share of the time to communicate on the network. StatTDM (Statistical Time-Division Multiplexing) is a variant of TDM that dynamically allocates time slots. FDM (Frequency-Division Multiplexing) allows each client on a base-band model transmit over a specific frequency (like Broadband).
+- **UDP (User Datagram Protocol)** - Layer 4 protocol. Transports segments in a unreliable way. This is useful for things like Skype where not every single data packet is important.
 - **WAN (Wide Area Network)** - A type of network that physically connects two geographically separated network locations (ex. Los Angeles and San Francisco) and are connected through a tunnel. Two business in two different states can be connected through a WAN.
 - **Z-Wave** - Short range low-latency data transfer technology.
