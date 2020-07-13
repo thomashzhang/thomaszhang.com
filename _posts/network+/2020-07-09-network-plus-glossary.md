@@ -9,7 +9,7 @@ tags: network+ comptia
 class: post-template
 subclass: 'post'
 author: thomas
----ddd
+---
 
 As I go through course material, study sessions, exploratory sessions, I will list all of the terms that have come up in a master alphabetized glossary list.
 
