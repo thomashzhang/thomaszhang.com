@@ -25,6 +25,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **CAN (Campus Area Network)** - This can cover several kilometers and can include multiple builds. Think college campuses. 
 - **Client** - A device used by the end user to access the network.
 - **Client/Server Model** - Dedicated server will serve resources to the client. This makes administration a lot easier as it is centralized but usually costs more money. This is used in business a lot today.
+- **CSMA/CD (Carrier Sense Multiple Access / Collision Detect)** - When a collision happens on a contention based network, then there's an algorithm to determine who actually gets to speak (ex, back-off and then wait a little bit of time).
 - **DB9/DB25** - A termination for serial cables. Used for external modems for asynchronous communications.
 - **F Connector** - A type of connector for coax cables that's a simple push to connect. Think cable TV which this connector is often used.
 - **DCE (Data Communications Equipment)** - Switches and modems, they are the "providers" of network interface.
@@ -34,7 +35,11 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **Hub-and-Spoke Topology** - Like Star, but the end devices can also connect to different hubs. Think Star Topology, but the end devices can connect to more that one central device.
 - **ICMP (Internet Control Message Protocol)** - Think about the `ping` command. "The Internet Control Message Protocol is an internet layer protocol used by network devices to diagnose network communication issues. ICMP is mainly used to determine whether or not data is reaching its intended destination in a timely manner. Commonly, the ICMP protocol is used on network devices, such as routers."
 - **IEEE 802.11** - WiFi (a, b, g, n, ac)
+- **IEEE 802.1x** - User Authentication. "A standard on switches to require users to authenticate themselves before gaining access to the network."
 - **IEEE 802.3** - Ethernet
+- **IEEE 802.3ad** - Link Aggregation. Turns multiple physical connections into a single logical connection.
+- **IEEE 802.3af** - PoE (Power over Ethernet) which supplies power over Ethernet cables (CAT 5 cables or higher). 15.4 Watts 15.4 watts of power max.
+- **IEEE 802.3at** - PoE+ (Power over Ethernet Plus) which supplies power over Ethernet cables (CAT 5 cables or higher). 25.5 watts of power max.
 - **IR (Infrared)** - Line of sight communication with the infrared frequency. Think remote controls.
 - **LAN (Local Area Network)** - A type of network that is generally a around a few hundred meters. Think business - all those office devices are connected through a LAN.
 - MAC (Media Access Control) - Physical addressing system where each Network Interface Card has a hardcoded 48-bit address.
@@ -46,7 +51,9 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **MTRJ (Mechanical Transfer-Registered Jack)** - A type of optical connector, smaller than the LC connector type.
 - **NFC (Near Field Communication)** - Shorter distance than RFID. Communication of two electronic devices within 4-cm range.
 - **PAN (Personal Area Network)** - A type of network generally in a much smaller range (usually < 10 meters between connections). As an example, a bluetooth watch connected to your phone is considered a personal area network. USB connections are usually also considered a PAN.
+- **PD - Powered Device** - Specifically refers to devices that can operate through the PoE standard.
 - **Peer-to-Peer Model** - Think torrents or Bitcoin. Each device connects to peer devices to share files and connect. The benefit is redundancy and lower costs as there's no server involved. 
+- **PSE - Power Sourcing Equipment** - The equipment that provides power over ethernet
 - **Ring Topology** - Cable runs in a circular loop and each device is connect on the ring. Only when a token ring is obtained by the device, then the device can talk on the network. Also not used that often today.
 - **RFID (Radio Frequency ID)** - Electromagnetic to read data from a chip.
 - **RG-6** - Copper coax cable specification. This is a lot thicker insulation that provides better shielding. And actually has a thicker copper core as well for better signal transfer. All of this is compared to RG-59.
@@ -57,6 +64,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **SC (Subscriber Connector)** - A connector for optical fiber cables. It looks like you have to *snap* and *click* the connector in place, so you can think "snap click" for SC connectors. See more in [Wikipedia](https://en.wikipedia.org/wiki/Optical_fiber_connector).
 - **Server** - A device that clients can connect to and provide network functionality.
 - **SMF (Single-Mode Fiber)** - A type of optical cable that is used for much longer distances than MMF, but with a much smaller core size.
+- **SFP (Small Form-Factor Pluggable [Transceiver])** - "Hot-pluggable network interface module used for both telecommunication and data communications applications." This is in contrast to GBIC, another much larger transceiver. There also exists the QSFP (Quad SFP) where it's only slightly bigger than the SFP, but allows for up to 4x the speed.
 - **Star Topology** Devices are connected directly to a central device (think of a star pattern). Downside is if the central device goes down, the entire network goes down.
 - **ST Connector** - A type of optical fiber connector. You'll have to *snap* and *twist* so you can think that ST stands for that.
 - **STP (Shielded Twisted Pair)** - A type of copper twisted pair cable where each pair of inner wires (8 in total) are twisted in pairs of two. There is additional metal shielding that covers the cables to prevent EMI. More expensive that UTP cables.
