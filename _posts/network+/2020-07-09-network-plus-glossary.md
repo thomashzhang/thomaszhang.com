@@ -21,20 +21,27 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **AP or WAP (Access Point)** - "In computer networking, a wireless access point, or more generally just access point, is a networking hardware device that allows other Wi-Fi devices to connect to a wired network."
 - **APC (Angled Physical Contact [Connector])** - The connector type is slightly offset at an angle. The prevents reflection of the signal back into the original source because light hitting the end of the connector gets reflected at a non parallel angle. SC connectors tend to use APC more.
 - **BNC Connector (Bayonet Neill-Concelman Connector)** - A type of connector for coax cables that's a twist to tighten. See more info on [Wikipedia](https://en.wikipedia.org/wiki/BNC_connector).
+- **BSS (Basic Service Set)** - One AP on the network (in contrast to IBSS).
 - **Bus Topology** - A single cable running through each computer to connect each device to the network. We don't use this today (generally). Any device talking will collide with other devices.
 - **CAN (Campus Area Network)** - This can cover several kilometers and can include multiple builds. Think college campuses. 
 - **Client** - A device used by the end user to access the network.
 - **Client/Server Model** - Dedicated server will serve resources to the client. This makes administration a lot easier as it is centralized but usually costs more money. This is used in business a lot today.
+- **CSMA/CA (Carrier Sense Multiple Access/Collision Avoidance)** - WLAN uses this instead of CSMA/CD. It'll check if it's safe to transmit first to avoid collisions ahead of time. Back off until CTS (clear to send).
 - **CSMA/CD (Carrier Sense Multiple Access / Collision Detect)** - When a collision happens on a contention based network, then there's an algorithm to determine who actually gets to speak (ex, back-off and then wait a little bit of time).
 - **DB9/DB25** - A termination for serial cables. Used for external modems for asynchronous communications.
 - **F Connector** - A type of connector for coax cables that's a simple push to connect. Think cable TV which this connector is often used.
 - **DCE (Data Communications Equipment)** - Switches and modems, they are the "providers" of network interface.
+- **DSSS (Direct-Sequence Spread Spectrum)** - Type of frequency that uses the entire spectrum.
 - **DTE (Data Terminating Equipment)** - Examples are desktops and laptops, they are the "end-user" of the network interface.
+- **EAP (Extensible Authentication Protocol)** - This is used under the hood for 802.11x.
+- **ESS (Extended Service Set)** - Multiple APs that provide wireless coverage. Good coverage with multiple access points.
+- **FHSS (Frequency-Hopping Spread Spectrum)** - Hop between frequencies for better security.
 - **Full-Mesh Topology** - Every node connects to every other node, very redundant, but there's a lot of connections. See more info on [Wikipedia](https://en.wikipedia.org/wiki/F_connector).
 - **Hub** - Connects network devices by taking in data and sending that data to all connected devices. This is not used for the most part today as switches are used more often.
 - **Hub-and-Spoke Topology** - Like Star, but the end devices can also connect to different hubs. Think Star Topology, but the end devices can connect to more that one central device.
+- **IBSS (Independent Basic Service Set)** - A network that contains devices in Ad-hoc mode without access to internet.
 - **ICMP (Internet Control Message Protocol)** - Think about the `ping` command. "The Internet Control Message Protocol is an internet layer protocol used by network devices to diagnose network communication issues. ICMP is mainly used to determine whether or not data is reaching its intended destination in a timely manner. Commonly, the ICMP protocol is used on network devices, such as routers."
-- **IEEE 802.11** - WiFi (a, b, g, n, ac)
+- **IEEE 802.11** - WiFi (a, b, g, n, ac). STandard for wireless network.
 - **IEEE 802.1d** - STP (Spanning Tree Protocol)
 - **IEEE 802.1q** - VLAN Trunking (each VLAN is a trunk)
 - **IEEE 802.1x** - User Authentication. "A standard on switches to require users to authenticate themselves before gaining access to the network."
@@ -52,13 +59,16 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **MDIX** - "Automated way to electronically simulate a crossover connector."
 - **MMF (Multimode Fiber)** - This is an optical cable type generally for distances shorter than 1 km. It's got a bigger core which allows for multiple signals to transfer through it. "Multi-mode optical fiber is a type of optical fiber mostly used for communication over short distances, such as within a building or on a campus. Multi-mode links can be used for data rates up to 100 Gbit/s."
 - **MTRJ (Mechanical Transfer-Registered Jack)** - A type of optical connector, smaller than the LC connector type.
+- **NAC (Network Access Control)** - Checks the device on the network (like OS, make sure it's up to date) before allowing the device on the network.
 - **NAS (Network Attached Storage)** - Disk storage that goes over TCP/IP.
 - **NFC (Near Field Communication)** - Shorter distance than RFID. Communication of two electronic devices within 4-cm range.
+- **OFDM (Orthogonal Frequency Division Multiplexing)** - Type of frequency algorithm that uses modulate that can transmit over 52 data streams. Best for high data rates and better to resist interference among other channels.
 - **PAN (Personal Area Network)** - A type of network generally in a much smaller range (usually < 10 meters between connections). As an example, a bluetooth watch connected to your phone is considered a personal area network. USB connections are usually also considered a PAN.
 - **PD - Powered Device** - Specifically refers to devices that can operate through the PoE standard.
 - **Peer-to-Peer Model** - Think torrents or Bitcoin. Each device connects to peer devices to share files and connect. The benefit is redundancy and lower costs as there's no server involved. 
 - **PSE - Power Sourcing Equipment** - The equipment that provides power over ethernet
 - **Ring Topology** - Cable runs in a circular loop and each device is connect on the ring. Only when a token ring is obtained by the device, then the device can talk on the network. Also not used that often today.
+- **RFI (Radio Frequency Interference)** - Overlapping channels ex. multiple networks on 2.4 GHz on the same channel.
 - **RFID (Radio Frequency ID)** - Electromagnetic to read data from a chip.
 - **RG-6** - Copper coax cable specification. This is a lot thicker insulation that provides better shielding. And actually has a thicker copper core as well for better signal transfer. All of this is compared to RG-59.
 - **RG-59** - Copper coax cable specification. Like RG-6, but thinner in all areas. Less shielding, thinner core, etc.
@@ -86,4 +96,6 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **UTP (Unshielded Twisted Pair)** - A type of copper twisted pair cable where each pair of inner wires (8 in total) are twisted in pairs of two, BUT don't have any shielding around the cable.
 - **VLAN (Virtual LAN [Local Area Network])** - Same hardware can be split up into multiple logical networks and can have logical separation of network traffic (different broadcast domain).
 - **WAN (Wide Area Network)** - A type of network that physically connects two geographically separated network locations (ex. Los Angeles and San Francisco) and are connected through a tunnel. Two business in two different states can be connected through a WAN.
+- **WAP** - Wireless access point. Like a hub/media converter to translate ethernet to wireless.
+- **WLAN (Wireless LAN)** - Wireless network.
 - **Z-Wave** - Short range low-latency data transfer technology.
