@@ -67,7 +67,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **RTP (Real-time Transport Protocol)** - Layer 5. "The Real-time Transport Protocol is a network protocol for delivering audio and video over IP networks. RTP is used in communication and entertainment systems that involve streaming media, such as telephony, video teleconference applications including WebRTC, television services and web-based push-to-talk features."
 - **SAN (Storage Area Network)** - Like NAS, but doesn't use TCP/IP and is much faster.
 - **SC (Subscriber Connector)** - A connector for optical fiber cables. It looks like you have to *snap* and *click* the connector in place, so you can think "snap click" for SC connectors. See more in [Wikipedia](https://en.wikipedia.org/wiki/Optical_fiber_connector).
-- **SDN (Software Defined Networking)** - Easy frontend to configure virtual and physical devices on your network (or in some cases code to configure virtual networks)
+- **SDN (Software Defined Networking)** - Easy frontend to configure virtual and physical devices on your network (or in some cases code to configure virtual networks).
 - **Server** - A device that clients can connect to and provide network functionality.
 - **SMF (Single-Mode Fiber)** - A type of optical cable that is used for much longer distances than MMF, but with a much smaller core size.
 - **SFP (Small Form-Factor Pluggable [Transceiver])** - "Hot-pluggable network interface module used for both telecommunication and data communications applications." This is in contrast to GBIC, another much larger transceiver. There also exists the QSFP (Quad SFP) where it's only slightly bigger than the SFP, but allows for up to 4x the speed.
