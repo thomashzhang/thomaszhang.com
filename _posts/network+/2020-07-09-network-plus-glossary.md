@@ -27,6 +27,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **BSS (Basic Service Set)** - One AP on the network (in contrast to IBSS).
 - **Bus Topology** - A single cable running through each computer to connect each device to the network. We don't use this today (generally). Any device talking will collide with other devices.
 - **CAN (Campus Area Network)** - This can cover several kilometers and can include multiple builds. Think college campuses. 
+- **CARP (Common Address Redundancy Protocol)** - Open standard of the HSRP.
 - **Client** - A device used by the end user to access the network.
 - **Client/Server Model** - Dedicated server will serve resources to the client. This makes administration a lot easier as it is centralized but usually costs more money. This is used in business a lot today.
 - **CSMA/CA (Carrier Sense Multiple Access/Collision Avoidance)** - WLAN uses this instead of CSMA/CD. It'll check if it's safe to transmit first to avoid collisions ahead of time. Back off until CTS (clear to send).
@@ -43,6 +44,8 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **ESS (Extended Service Set)** - Multiple APs that provide wireless coverage. Good coverage with multiple access points.
 - **FHSS (Frequency-Hopping Spread Spectrum)** - Hop between frequencies for better security.
 - **Full-Mesh Topology** - Every node connects to every other node, very redundant, but there's a lot of connections. See more info on [Wikipedia](https://en.wikipedia.org/wiki/F_connector).
+- **GLBP (Gateway Load Balancing Protocol)** - Like HSRP where it's proprietary by Cisco, but actually focuses on load balancing (uses both routers) instead of an active/standby pair.
+- **HSRP (Hot Standby Router Protocol)** - Redundancy protocol by Cisco where one router is on standby while another has all the traffic routed to it (and it'll switch one the active router is broken). There's a "virtual" router that can route to either router.
 - **Hub** - Connects network devices by taking in data and sending that data to all connected devices. This is not used for the most part today as switches are used more often.
 - **Hub-and-Spoke Topology** - Like Star, but the end devices can also connect to different hubs. Think Star Topology, but the end devices can connect to more that one central device.
 - **IBSS (Independent Basic Service Set)** - A network that contains devices in Ad-hoc mode without access to internet.
@@ -61,6 +64,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **IR (Infrared)** - Line of sight communication with the infrared frequency. Think remote controls.
 - **ISDN (Integrated Services Digital Network)** - Older tech. 64-kbps signaling data, we'll probably not come across this in real life that often or at all today.
 - **IS-IS (Intermediate System to Intermediate System)** - IGP routing protocol that uses costs. Like OSPF, but not as popular. Costs is based on link speed.
+- **LACP (Link Aggregation Control Protocol)** - Multiple links between devices (achieves redundancy between switches).
 - **LAN (Local Area Network)** - A type of network that is generally a around a few hundred meters. Think business - all those office devices are connected through a LAN.
 - MAC (Media Access Control) - Physical addressing system where each Network Interface Card has a hardcoded 48-bit address.
 - **LC (Lucent Connector)** - A type of optical connector where there's kind of two SC connectors combined together. Think *love connector* because there's two connectors connected together.
@@ -69,7 +73,9 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **MDIX** - "Automated way to electronically simulate a crossover connector."
 - **MMF (Multimode Fiber)** - This is an optical cable type generally for distances shorter than 1 km. It's got a bigger core which allows for multiple signals to transfer through it. "Multi-mode optical fiber is a type of optical fiber mostly used for communication over short distances, such as within a building or on a campus. Multi-mode links can be used for data rates up to 100 Gbit/s."
 - **MPLS (Multiprotocol Label Switching)** - Multiple protocol support on the same network. This is what a service provider would use (maybe both Frame Relay and ATM on the same MPLS backbone). More efficient than layer 3 tech.
+- **MTBF (Mean Time Between Failures)** - Average time between failures of a device. Time to Failure + Time to Repair = MTBF.
 - **MTRJ (Mechanical Transfer-Registered Jack)** - A type of optical connector, smaller than the LC connector type.
+- **MTTR (Mean Time to Repair)** - Time it takes to repair a device or network after breakage.
 - **NAC (Network Access Control)** - Checks the device on the network (like OS, make sure it's up to date) before allowing the device on the network.
 - **NAS (Network Attached Storage)** - Disk storage that goes over TCP/IP.
 - **NAT (Network Address Translate)** - Translate private IP to public IP addresses.
@@ -117,6 +123,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **UTP (Unshielded Twisted Pair)** - A type of copper twisted pair cable where each pair of inner wires (8 in total) are twisted in pairs of two, BUT don't have any shielding around the cable.
 - **VLAN (Virtual LAN [Local Area Network])** - Same hardware can be split up into multiple logical networks and can have logical separation of network traffic (different broadcast domain).
 - **VLSM (Variable Length Subnet Mask)** - Subnets of unequal number of IP addresses can be used. It's like a subnetting of subnets.
+- **VRRP (Virtual Router Redundancy Protocol)** - Another open standard variant of HSRP.
 - **WAN (Wide Area Network)** - A type of network that physically connects two geographically separated network locations (ex. Los Angeles and San Francisco) and are connected through a tunnel. Two business in two different states can be connected through a WAN.
 - **WAP** - Wireless access point. Like a hub/media converter to translate ethernet to wireless.
 - **WLAN (Wireless LAN)** - Wireless network.
