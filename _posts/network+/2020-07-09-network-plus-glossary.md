@@ -66,7 +66,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **IS-IS (Intermediate System to Intermediate System)** - IGP routing protocol that uses costs. Like OSPF, but not as popular. Costs is based on link speed.
 - **LACP (Link Aggregation Control Protocol)** - Multiple links between devices (achieves redundancy between switches).
 - **LAN (Local Area Network)** - A type of network that is generally a around a few hundred meters. Think business - all those office devices are connected through a LAN.
-- MAC (Media Access Control) - Physical addressing system where each Network Interface Card has a hardcoded 48-bit address.
+- **MAC (Media Access Control)** - Physical addressing system where each Network Interface Card has a hardcoded 48-bit address.
 - **LC (Lucent Connector)** - A type of optical connector where there's kind of two SC connectors combined together. Think *love connector* because there's two connectors connected together.
 - **MAN (Metropolitan Area Network)** - Think up to 25 miles. An example would be the police department in a city or a bunch of college campuses.
 - **Media Converter** - A layer 1 device which converts different physical mediums into others. As an example, a converter that converts light signals to copper signals, or technically copper signals to wireless signals.
@@ -87,6 +87,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **PAP (Password Authentication Protocol)** - One-way authentication between client and server. Credentials are sent in cleartext (not good security). Compare this to CHAP (Challenge Authentication Protocol) where there's a three way protocol and no password in plaintext (similar to MS-CHAP, but that has 2 way authentication).
 - **PAT (Port Address Translation)** - Multiple private IP addresses share one public IP. The router uses a port to determine which device should have the traffic routed from the public IP.
 - **PD - Powered Device** - Specifically refers to devices that can operate through the PoE standard.
+- **PDU - Protocol Data Unit** - The data unit for each OSI layer. Layer 4 and higher = segment, layer 3 = packet, layer 2 = frame, layer 1 = bit.
 - **Peer-to-Peer Model** - Think torrents or Bitcoin. Each device connects to peer devices to share files and connect. The benefit is redundancy and lower costs as there's no server involved.
 - **PIM (Protocol Independent Multicast)** - Multicast traffic. Focused on routers. In dense mode (PIM-DM) starts with flooding and then picks the optimal route. In sparse mode (PIM-SM), will try any hop (not optimal, but pretty good as there's no flooding - takes a little longer to find the optimal route).
 - **POTS (Plain Old Telephone Service)** - Actual analog service for telephones (instead of digit VOIP).
