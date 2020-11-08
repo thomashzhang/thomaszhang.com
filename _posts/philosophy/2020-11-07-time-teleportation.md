@@ -21,7 +21,7 @@ That's a mouthful of words, but how does it actually work? Let's break it down i
 
 Notice that if this is done correctly, from the outside observer, it would appear as if you've teleported from point A to point B. From their time perspective, you got there instantly. From your time perspective, everyone was frozen and you simply walked from point A to point B.
 
-Here are the same steps, but a little more complex:
+Here are the same steps, but a little more detailed:
 
 1. You create a spacial bubble (B1) that wraps around your person exactly and set your bubble's TD to TD1, where the passage of time is equal to 1x the currently known passage of time (CKPT)
 2. The spacial inverse of B1, the rest of the known universe, you set the TD to TD2, where the passage of time is 0 (`1x CKPT = 0x in TD2`).
