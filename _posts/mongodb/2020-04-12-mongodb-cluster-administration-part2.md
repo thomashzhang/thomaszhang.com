@@ -5,7 +5,7 @@ cover: assets/images/mongodb/mongodb_cover.jpg
 navigation: True
 title: MongoDB Cluster Administration Notes [Part 2 - Replication]
 date: 2020-04-12 7:53:00
-tags: mongodb
+tags: mongodb, development
 class: post-template
 subclass: 'post'
 author: thomas
