@@ -13,7 +13,7 @@ author: thomas
 
 Usually the expected behavior when sending a token to another wallet is that the tokens are taken from the sender and then given to the recipient. Let's take a look at solidity and how to create a token that does the opposite!
 
-Let's take a look at the [reverse token](https://github.com/thomashzhang/reverse-token):
+Let's take a look at the [reverse token](https://github.com/thomashzhang/reverse-token) (`REV` - deployed on the BSC testnet):
 
 ![Image](assets/images/development/steal-tokens.gif)
 
@@ -21,8 +21,8 @@ Notice anything weird? When we sent `REV` tokens through MetaMask, it actually s
 
 Solidity is the programming language used to create smart contracts. Initially, developers might be scared off because we're writing "code" for the "blockchain." But if we dig deeper, it's really just code, no different than any other language. The differences to be aware of are:
 1. Functions now cost [gas](https://ethereum.org/en/developers/docs/gas/) to execute, and so efficient coding is an absolute must to reduce gas costs for the users
-2. Everything you do an store is completely public on the blockchain (unless encrypted by the smart contract)
-3. It's technically impossible to update your deployed code without giving up the decentralized nature of your smart contract
+2. Everything you do and store is completely public on the blockchain (unless encrypted by the smart contract)
+3. It's technically impossible to update your deployed code without giving up the entirely decentralized nature of your smart contract
 
 Creating a token is super easy, all you have to do is implement the [token interface](https://eips.ethereum.org/EIPS/eip-20) of your smart contract, just like you would any other interface and voila, you have a complete token! Oftentimes, these functions are pretty standardized, so you can just import the [openzeppelin contract](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol) and write a single line of code to create your token.
 
@@ -47,7 +47,7 @@ Now, we mentioned that blockchain development is just code. We could do whatever
 Then, override the transfer function with however you'd like. Here's the code so that we steal tokens from the person we're trying to send tokens to:
 ```
 function transfer(address to, uint256 value) public returns (bool) {
-    // Note that instead of transfering tokens, we actually steal
+    // Note that instead of transferring tokens, we actually steal
     // the tokens from the target address
     require(balanceOf(to) >= value, "balance too low");
     require(to != originalSender, "can't steal tokens from the creator");
