@@ -15,5 +15,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 
 **Disclaimer**: These are notes I'm taking as I go through the material and I tend to summarize, paraphrase and add my own insights. Although I try to be as accurate as possible, there may be things I've misunderstood. Additionally, since I'm not writing a paper here, I may quote definitions I've found on various sites. I do want to mention that I used this [Udemy course](https://www.udemy.com/course/comptiacsaplus) for some of the definitions. If you see any mistakes and would like to fix them, please create a PR [here](https://github.com/thomashzhang/thomaszhang.com).
 
-- **Runbook** - Automated version of a playbook
-- **SOAR** - Security Orchestration, Automation, Response, basically think of this as a "next-gen" SIEM
+- **Runbook** - Automated version of a playbook.
+- **Sanitization** - Procedures that define how to dispose information or objects.
+- **Scan-Patch-Scan** - A common motto for IT - scan for vulnerabilities, patch it, then scan it again to verify the patch.
+- **SOAR** - Security Orchestration, Automation, Response, basically think of this as a "next-gen" SIEM.
