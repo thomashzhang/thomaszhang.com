@@ -15,22 +15,52 @@ As I go through course material, study sessions, exploratory sessions, I will li
 
 **Disclaimer**: These are notes I'm taking as I go through the material and I tend to summarize, paraphrase and add my own insights. Although I try to be as accurate as possible, there may be things I've misunderstood. Additionally, since I'm not writing a paper here, I may quote definitions I've found on various sites. I do want to mention that I used this [Udemy course](https://www.udemy.com/course/comptiacsaplus) for some of the definitions. If you see any mistakes and would like to fix them, please create a PR [here](https://github.com/thomashzhang/thomaszhang.com).
 
+- **ACL** - Access Control List. The permissions for some resource.
+- **Aircrack ng** - Bunch of wireless tools. Aircrack ng specifically allows you to "crack" WEP passwords.
+- **ALE** - Annual Loss Expectancy. The expected cost to an organization for an event. Ex. if there's a 5% chance a laptop will need replacing, and it's $2,000k, then the ALE of that event (losing a laptop) is $100.
 - **BIA** - Business Impact Analysis. Identifies organizational risk. Ex. could be something physical like an office/data center that could be at risk for power going out, or virtual like RTO, RPO stats.
+- **Blue Team** - The defense side of security like the IT admins or cybersecurity analysts. Contrast this with the red team.
 - **Business Continuity Loss** - Can't fulfill contracts because of breakdown of infrastructure system. 
-- **Compensating Control** - Secondary control that compensates the primary control. Ex. you may require a 16 digit password, but if the system doesn't allow for more than 12 digits, a compensating control could be to add 2FA. 
+- **CASB** - Cloud Access Security Broker - A Cloud Access Security Broker, or CASB, is cloud-hosted software or on-premises software or hardware that act as an intermediary between users and cloud service providers. See [this](https://www.skyhighsecurity.com/en-us/cybersecurity-defined/what-is-a-casb.html) for more details.
+- **CDM** - Continuous Diagnostics and Mitigation - Helps US government agencies identify cybersecurity risks.
+- **Compensating Control** - Secondary control that compensates the primary control. Ex. you may require a 16 digit password, but if the system doesn't allow for more than 12 digits, a compensating control could be to add 2FA.
+- **CPE** - Common Platform Enumeration - scheme that nmap, or any other tool, can use to fingerprint/identify hardware devices, OS version, applications, etc. This is developed by MITRE 
 - **DLP** - Data Loss Prevention, to prevent data exfiltration.
 - **Diamond Model of Intrusion Analysis** - Describes cyber attacks in the shape of a diamond with four parts: Adversary, Infrastructure, Capability, Target.
+- **DKIM** - Domain Keys Identified Mail - similar functionality as SFP, but much more secure (and less cumbersome) by instead of using IP addresses for verification, it'll use a public key record to verify an email (that's been signed) is legitimate. Read more [here](https://www.courier.com/guides/dmarc-vs-spf-vs-dkim/).
+- **DMARC** - Domain-based Message Authentication, Reporting & Conformance. This is a very powerful email authentication protocol that uses both SPF and DKIM to decide the authenticity of an email. Read more [here](https://www.courier.com/guides/dmarc-vs-spf-vs-dkim/). Also note how this differs from just SFP (validates email sender IP) and DKIM (validates email sender's cryptographic signature).
 - **EDR** - Endpoint Detection and Response.
 - **ERM** - Enterprise Risk Management.
+- **ESA** - Enterprise Service Architecture. A framework for defining baselines, goals and methods used to secure a business.
+- **Fingerprinting** - Mapping out the layout of a device (open ports, OS version etc.). Contrast this to footprinting.
+- **Footprinting** - Mapping out the layout of the network. We're not focused on the details of a single device. Contrast this to fingerprinting.
+- **Hashcat** - Password cracking tool (for passive cracking) of hashes. Installed by default on Kali Linux. Similar to John the Ripper.
+- **hPing** - Open source packet generator. Allows the user to craft packets.
 - **IoC** - Indicators of Compromise.
+- **John the Ripper** - Password cracking tool (reversing hashes), not diving too deep, see Hashcat for a rough definition.
+- **Maturity Model** - Part of ESA framework for how mature the frameworks are. There's a common one that's 5 levels with level 1 being very reactive in terms of security.
 - **MEF** - Mission Essential Function. Functions that can't be deferred on the business side.
+- **MITRE ATT&CK** - Essentially a database of all known attacks through all stages of the attack. This includes how to detect and stop these attacks.
+- **MTBF** - Mean Time Between Failures. How long do we expect a system to last? Ex. hard drives might only be expected to last 10 years before failing.
 - **MTD** - Maximum Tolerable Downtime. Max time a business can be down without irrevocable business failure.
+- **Nessus** - Free remote vulnerability scanner.
+- **NIST 4 Steps of Incident Response** - 1. Preparation. 2. Detection and Analysis. 3. Containment, Eradication and Recovery. 4. Post-Incident Activity.
+- **NIST Cybersecurity Framework** - A risk-informed model of ESA (Identify, Protect, Detect, Respond, and Recover).
+- **NMAP** - Network scan (see footprinting). A very common tool to be familiar with. See more information [here](https://www.upguard.com/blog/how-to-use-nmap). There are also lots of tools out there that will provide a visual interface for NMAP like Zenmap.
+- **NSE** - Nmap Scripting Engine - Lua based scripting engine for Nmap to carry out detailed probes.
+- **Reaver** - Wireless tool to attack WPS enabled networks. Can potentially crack a WPS pin (which is 8 digits long) within hours as long as it's not rate-limited.
+- **Red Team** - The attackers or pentesters that try to offensively attack a system. Contrast with the blue team.
 - **RPO** - Recovery Point Objective. Longest time an organization can tolerate lost data being recoverable. Ex. a database goes down, and new data isn't recorded for 12 hours. That 12 hours is the RPO, and is that tolerable to the organization?
 - **RSOI** - Return on Security Investment. By adding this security control, what's the expected return? This is a ratio.
 - **RTO** - Recovery Time Objective. The time between systems going down to when it can be up again. Ex, if live databases all go down, how long does it take for them to recover?
 - **Runbook** - Automated version of a playbook.
 - **Sanitization** - Procedures that define how to dispose information or objects.
 - **Scan-Patch-Scan** - A common motto for IT - scan for vulnerabilities, patch it, then scan it again to verify the patch.
+- **SLE** - Single Loss Expectancy.
+- **SNORT** - Open source IDS. 
 - **SOAR** - Security Orchestration, Automation, Response, basically think of this as a "next-gen" SIEM.
+- **SPF** - Sender Policy Framework. In emails, this can be used to verify the sender of an email is indeed on the IP list. Once an SFP record is setup, the email service will check the domain (ex. me@thomaszhang.com, so it'll check thomaszhang.com) for a txt record containing the IP addresses that's allowed. If the email came from an allowed IP address, that's likely legitimate. Read more [here](https://www.courier.com/guides/dmarc-vs-spf-vs-dkim/).
 - **Tabletop Exercises** - Simulated emergency situation on a table. But the downside is that the people don't go through the entire flow.
+- **Vulnerability Management Lifecycle** - Assessment, Prioritization, Act, Reassessment, Improvement. See more [here](https://heimdalsecurity.com/blog/vulnerability-management-lifecycle/) and [here](https://www.crowdstrike.com/cybersecurity-101/vulnerability-management/vulnerability-management-lifecycle/)
+- **White Team** - The team that supervises/administers/supports the blue/red team in the incident response training.
 - **WRT** - Work Recovery Time. Fixing the secondary effects after RTO period. Ex. if live databases go down, and critical functions are working, how long does it take to ensure analytics are back up.
