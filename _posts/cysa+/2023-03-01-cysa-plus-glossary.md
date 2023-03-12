@@ -22,11 +22,15 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **BIA** - Business Impact Analysis. Identifies organizational risk. Ex. could be something physical like an office/data center that could be at risk for power going out, or virtual like RTO, RPO stats.
 - **Blue Team** - The defense side of security like the IT admins or cybersecurity analysts. Contrast this with the red team.
 - **Business Continuity Loss** - Can't fulfill contracts because of breakdown of infrastructure system. 
+- **CAPEC** - Common Attack Pattern and Enumeration Classification. Knowledge base by MITRE that focuses on application security.
 - **CASB** - Cloud Access Security Broker - A Cloud Access Security Broker, or CASB, is cloud-hosted software or on-premises software or hardware that act as an intermediary between users and cloud service providers. See [this](https://www.skyhighsecurity.com/en-us/cybersecurity-defined/what-is-a-casb.html) for more details.
+- **CCE** - Common Configuration Enumeration. Scheme for secure configuration checks across multiple sources. Basically these are best practice statements.
 - **Compliance Scan** - Scan that just goes through a checklist. Think PCI DSS scanning.
 - **CDM** - Continuous Diagnostics and Mitigation - Helps US government agencies identify cybersecurity risks.
 - **Compensating Control** - Secondary control that compensates the primary control. Ex. you may require a 16 digit password, but if the system doesn't allow for more than 12 digits, a compensating control could be to add 2FA.
 - **CPE** - Common Platform Enumeration - scheme that nmap, or any other tool, can use to fingerprint/identify hardware devices, OS version, applications, etc. This is developed by MITRE.
+- **CVE** - Common Vulnerabilities and Exposures. Scheme for identifying vulnerabilities. This was developed by MITRE and adopted by NIST. CVE-YYYY-### (this is how CVEs are identified, YYYY is the year).
+- **CVSS** - Common Vulnerability Scoring System. This is a more objective measure at deciding how critical a vulnerability is. Scored on 0-10. Uses exploit and impact with temporal and environmental factors to determine this score.
 - **Discovery Scan** - A scan that just inventories what's out there, think nmap. Fast, but not in depth.
 - **DLP** - Data Loss Prevention, to prevent data exfiltration.
 - **Diamond Model of Intrusion Analysis** - Describes cyber attacks in the shape of a diamond with four parts: Adversary, Infrastructure, Capability, Target.
@@ -54,6 +58,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **NIST Cybersecurity Framework** - A risk-informed model of ESA (Identify, Protect, Detect, Respond, and Recover).
 - **NMAP** - Network scan (see footprinting). A very common tool to be familiar with. See more information [here](https://www.upguard.com/blog/how-to-use-nmap). There are also lots of tools out there that will provide a visual interface for NMAP like Zenmap.
 - **NSE** - Nmap Scripting Engine - Lua based scripting engine for Nmap to carry out detailed probes.
+- **NVD** - National Vulnerability Database. Superset of CVE that includes more information (like remediation instructions).
 - **PAN** - Not personal access network (unless it's used in that context) but stands for Privileged Access Management (solution). This is used for credentialed vulnerability scanning where the credentials are one time use. This ensure the credentials no longer work after some set of criteria, though this solution also usually costs some amount of money. If you can't use a PAN solution, you can also do a set time period where a scan happens.
 - **Reaver** - Wireless tool to attack WPS enabled networks. Can potentially crack a WPS pin (which is 8 digits long) within hours as long as it's not rate-limited.
 - **Red Team** - The attackers or pentesters that try to offensively attack a system. Contrast with the blue team.
