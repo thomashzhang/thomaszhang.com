@@ -28,9 +28,10 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **Compliance Scan** - Scan that just goes through a checklist. Think PCI DSS scanning.
 - **CDM** - Continuous Diagnostics and Mitigation - Helps US government agencies identify cybersecurity risks.
 - **Compensating Control** - Secondary control that compensates the primary control. Ex. you may require a 16 digit password, but if the system doesn't allow for more than 12 digits, a compensating control could be to add 2FA.
+- **Core Impact** - Penetration testing tool.
 - **CPE** - Common Platform Enumeration - scheme that nmap, or any other tool, can use to fingerprint/identify hardware devices, OS version, applications, etc. This is developed by MITRE.
 - **CVE** - Common Vulnerabilities and Exposures. Scheme for identifying vulnerabilities. This was developed by MITRE and adopted by NIST. CVE-YYYY-### (this is how CVEs are identified, YYYY is the year).
-- **CVSS** - Common Vulnerability Scoring System. This is a more objective measure at deciding how critical a vulnerability is. Scored on 0-10. Uses exploit and impact with temporal and environmental factors to determine this score.
+- **CVSS** - Common Vulnerability Scoring System. This is a more objective measure at deciding how critical a vulnerability is. Scored on 0-10. Uses exploit and impact with temporal and environmental factors to determine this score. You can use [this](https://www.first.org/cvss/calculator/3.1) to create your CVSS score.
 - **Discovery Scan** - A scan that just inventories what's out there, think nmap. Fast, but not in depth.
 - **DLP** - Data Loss Prevention, to prevent data exfiltration.
 - **Diamond Model of Intrusion Analysis** - Describes cyber attacks in the shape of a diamond with four parts: Adversary, Infrastructure, Capability, Target.
@@ -53,13 +54,16 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **MITRE ATT&CK** - Essentially a database of all known attacks through all stages of the attack. This includes how to detect and stop these attacks.
 - **MTBF** - Mean Time Between Failures. How long do we expect a system to last? Ex. hard drives might only be expected to last 10 years before failing.
 - **MTD** - Maximum Tolerable Downtime. Max time a business can be down without irrevocable business failure.
+- **NASL** - Nessus Attack Scripting Language. Used for creating Nessus plugins.
 - **Nessus** - Free remote vulnerability scanner.
 - **NIST 4 Steps of Incident Response** - 1. Preparation. 2. Detection and Analysis. 3. Containment, Eradication and Recovery. 4. Post-Incident Activity.
 - **NIST Cybersecurity Framework** - A risk-informed model of ESA (Identify, Protect, Detect, Respond, and Recover).
 - **NMAP** - Network scan (see footprinting). A very common tool to be familiar with. See more information [here](https://www.upguard.com/blog/how-to-use-nmap). There are also lots of tools out there that will provide a visual interface for NMAP like Zenmap.
 - **NSE** - Nmap Scripting Engine - Lua based scripting engine for Nmap to carry out detailed probes.
 - **NVD** - National Vulnerability Database. Superset of CVE that includes more information (like remediation instructions).
+- **OpenVAS** - Open source vulnerability scanner that split off the Nessus codebase when Nessus became a commercial software.
 - **PAN** - Not personal access network (unless it's used in that context) but stands for Privileged Access Management (solution). This is used for credentialed vulnerability scanning where the credentials are one time use. This ensure the credentials no longer work after some set of criteria, though this solution also usually costs some amount of money. If you can't use a PAN solution, you can also do a set time period where a scan happens.
+- **Qualys** - Cloud-based vulnerability management software. With installed sensors on base machines.
 - **Reaver** - Wireless tool to attack WPS enabled networks. Can potentially crack a WPS pin (which is 8 digits long) within hours as long as it's not rate-limited.
 - **Red Team** - The attackers or pentesters that try to offensively attack a system. Contrast with the blue team.
 - **RPO** - Recovery Point Objective. Longest time an organization can tolerate lost data being recoverable. Ex. a database goes down, and new data isn't recorded for 12 hours. That 12 hours is the RPO, and is that tolerable to the organization?
