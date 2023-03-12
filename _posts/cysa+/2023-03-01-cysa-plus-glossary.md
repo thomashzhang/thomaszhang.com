@@ -16,15 +16,18 @@ As I go through course material, study sessions, exploratory sessions, I will li
 **Disclaimer**: These are notes I'm taking as I go through the material and I tend to summarize, paraphrase and add my own insights. Although I try to be as accurate as possible, there may be things I've misunderstood. Additionally, since I'm not writing a paper here, I may quote definitions I've found on various sites. I do want to mention that I used this [Udemy course](https://www.udemy.com/course/comptiacsaplus) for some of the definitions. If you see any mistakes and would like to fix them, please create a PR [here](https://github.com/thomashzhang/thomaszhang.com).
 
 - **ACL** - Access Control List. The permissions for some resource.
+- **Active Scanning** - Vulnerability scanning that can consume resources (actively probes targets).
 - **Aircrack ng** - Bunch of wireless tools. Aircrack ng specifically allows you to "crack" WEP passwords.
 - **ALE** - Annual Loss Expectancy. The expected cost to an organization for an event. Ex. if there's a 5% chance a laptop will need replacing, and it's $2,000k, then the ALE of that event (losing a laptop) is $100.
 - **BIA** - Business Impact Analysis. Identifies organizational risk. Ex. could be something physical like an office/data center that could be at risk for power going out, or virtual like RTO, RPO stats.
 - **Blue Team** - The defense side of security like the IT admins or cybersecurity analysts. Contrast this with the red team.
 - **Business Continuity Loss** - Can't fulfill contracts because of breakdown of infrastructure system. 
 - **CASB** - Cloud Access Security Broker - A Cloud Access Security Broker, or CASB, is cloud-hosted software or on-premises software or hardware that act as an intermediary between users and cloud service providers. See [this](https://www.skyhighsecurity.com/en-us/cybersecurity-defined/what-is-a-casb.html) for more details.
+- **Compliance Scan** - Scan that just goes through a checklist. Think PCI DSS scanning.
 - **CDM** - Continuous Diagnostics and Mitigation - Helps US government agencies identify cybersecurity risks.
 - **Compensating Control** - Secondary control that compensates the primary control. Ex. you may require a 16 digit password, but if the system doesn't allow for more than 12 digits, a compensating control could be to add 2FA.
-- **CPE** - Common Platform Enumeration - scheme that nmap, or any other tool, can use to fingerprint/identify hardware devices, OS version, applications, etc. This is developed by MITRE 
+- **CPE** - Common Platform Enumeration - scheme that nmap, or any other tool, can use to fingerprint/identify hardware devices, OS version, applications, etc. This is developed by MITRE.
+- **Discovery Scan** - A scan that just inventories what's out there, think nmap. Fast, but not in depth.
 - **DLP** - Data Loss Prevention, to prevent data exfiltration.
 - **Diamond Model of Intrusion Analysis** - Describes cyber attacks in the shape of a diamond with four parts: Adversary, Infrastructure, Capability, Target.
 - **DKIM** - Domain Keys Identified Mail - similar functionality as SFP, but much more secure (and less cumbersome) by instead of using IP addresses for verification, it'll use a public key record to verify an email (that's been signed) is legitimate. Read more [here](https://www.courier.com/guides/dmarc-vs-spf-vs-dkim/).
@@ -32,12 +35,15 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **EDR** - Endpoint Detection and Response.
 - **ERM** - Enterprise Risk Management.
 - **ESA** - Enterprise Service Architecture. A framework for defining baselines, goals and methods used to secure a business.
+- **Fast Assessment Scan** - Fast version of a vulnerability scan (versions of hosts, minor vulnerabilities/ configuration issues).
 - **Fingerprinting** - Mapping out the layout of a device (open ports, OS version etc.). Contrast this to footprinting.
 - **Footprinting** - Mapping out the layout of the network. We're not focused on the details of a single device. Contrast this to fingerprinting.
+- **Full Assessment Scan** - Fully scans every single host. It's a lot more intrusive.
 - **Hashcat** - Password cracking tool (for passive cracking) of hashes. Installed by default on Kali Linux. Similar to John the Ripper.
 - **hPing** - Open source packet generator. Allows the user to craft packets.
 - **IoC** - Indicators of Compromise.
 - **John the Ripper** - Password cracking tool (reversing hashes), not diving too deep, see Hashcat for a rough definition.
+- **Maltego** - Maltego is software used for open-source intelligence and forensics, developed by Paterva from Pretoria, South Africa. Maltego focuses on providing a library of transforms for discovery of data from open sources, and visualizing that information in a graph format, suitable for link analysis and data mining. This is taken from [Wikipedia](https://en.wikipedia.org/wiki/Maltego).
 - **Maturity Model** - Part of ESA framework for how mature the frameworks are. There's a common one that's 5 levels with level 1 being very reactive in terms of security.
 - **MEF** - Mission Essential Function. Functions that can't be deferred on the business side.
 - **MITRE ATT&CK** - Essentially a database of all known attacks through all stages of the attack. This includes how to detect and stop these attacks.
@@ -48,6 +54,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **NIST Cybersecurity Framework** - A risk-informed model of ESA (Identify, Protect, Detect, Respond, and Recover).
 - **NMAP** - Network scan (see footprinting). A very common tool to be familiar with. See more information [here](https://www.upguard.com/blog/how-to-use-nmap). There are also lots of tools out there that will provide a visual interface for NMAP like Zenmap.
 - **NSE** - Nmap Scripting Engine - Lua based scripting engine for Nmap to carry out detailed probes.
+- **PAN** - Not personal access network (unless it's used in that context) but stands for Privileged Access Management (solution). This is used for credentialed vulnerability scanning where the credentials are one time use. This ensure the credentials no longer work after some set of criteria, though this solution also usually costs some amount of money. If you can't use a PAN solution, you can also do a set time period where a scan happens.
 - **Reaver** - Wireless tool to attack WPS enabled networks. Can potentially crack a WPS pin (which is 8 digits long) within hours as long as it's not rate-limited.
 - **Red Team** - The attackers or pentesters that try to offensively attack a system. Contrast with the blue team.
 - **RPO** - Recovery Point Objective. Longest time an organization can tolerate lost data being recoverable. Ex. a database goes down, and new data isn't recorded for 12 hours. That 12 hours is the RPO, and is that tolerable to the organization?
@@ -56,6 +63,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **Runbook** - Automated version of a playbook.
 - **Sanitization** - Procedures that define how to dispose information or objects.
 - **Scan-Patch-Scan** - A common motto for IT - scan for vulnerabilities, patch it, then scan it again to verify the patch.
+- **SCAP** - A NIST framework that outlines various accepted practices for automating vulnerability scanning. This also sets the standard for the format the results/vulnerabilities come in.
 - **SLE** - Single Loss Expectancy.
 - **SNORT** - Open source IDS. 
 - **SOAR** - Security Orchestration, Automation, Response, basically think of this as a "next-gen" SIEM.
