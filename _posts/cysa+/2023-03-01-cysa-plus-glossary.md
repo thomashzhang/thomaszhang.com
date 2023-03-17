@@ -43,6 +43,8 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **DKIM** - Domain Keys Identified Mail - similar functionality as SFP, but much more secure (and less cumbersome) by instead of using IP addresses for verification, it'll use a public key record to verify an email (that's been signed) is legitimate. Read more [here](https://www.courier.com/guides/dmarc-vs-spf-vs-dkim/).
 - **DMARC** - Domain-based Message Authentication, Reporting & Conformance. This is a very powerful email authentication protocol that uses both SPF and DKIM to decide the authenticity of an email. Read more [here](https://www.courier.com/guides/dmarc-vs-spf-vs-dkim/). Also note how this differs from just SFP (validates email sender IP) and DKIM (validates email sender's cryptographic signature).
 - **EDR** - Endpoint Detection and Response.
+- **eFuse** - Essentially a software fuse. Generally this refers to the state of firmware on your computer. If an eFuse is triggered (by tampering or whatnot), the firmware can no longer be trusted.
+- **EMM** - Enterprise Mobility Management. Essentially an MDM solution with even broader capabilities. Many use the terms interchangeably.
 - **ERM** - Enterprise Risk Management.
 - **ESA** - Enterprise Service Architecture. A framework for defining baselines, goals and methods used to secure a business.
 - **Fast Assessment Scan** - Fast version of a vulnerability scan (versions of hosts, minor vulnerabilities/ configuration issues).
@@ -50,15 +52,20 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **Footprinting** - Mapping out the layout of the network. We're not focused on the details of a single device. Contrast this to fingerprinting.
 - **Full Assessment Scan** - Fully scans every single host. It's a lot more intrusive.
 - **Full Disclosure Mailing List** - A public, vendor-neutral forum for detailed discussion of vulnerabilities and exploitation techniques, as well as tools, papers, news, and events of interest to the community. The relaxed atmosphere of this quirky list provides some comic relief and certain industry gossip. More importantly, fresh vulnerabilities sometimes hit this list many hours or days before they pass through the Bugtraq moderation queue. See the website [here](https://seclists.org/fulldisclosure/).
+- **Hack Back** - Using offensive techniques to attack an attacker (potentially when they are in a honeypot). This is usually not allowed at most organizations. There are legal repercussions potentially.
 - **Hardening** - Reduce attack service. Remove or disable anything that's unneeded, use least privilege. Always update the system, patch it. Uninstall unnecessary network protocols, enforce ACL, etc.
 - **Hashcat** - Password cracking tool (for passive cracking) of hashes. Installed by default on Kali Linux. Similar to John the Ripper.
+- **Honeypot** - A host or server that's setup to lure an attacker to it. Ex. it might have x amount of bitcoin, or it has fake passwords, it will allow a security analyst to look at the attacker's behavior.
 - **hPing** - Open source packet generator. Allows the user to craft packets.
+- **HSM** - Hardware Security Module. Appliance that is used to generate and store keys that is less susceptible to tampering than software solutions.
 - **IoC** - Indicators of Compromise.
 - **John the Ripper** - Password cracking tool (reversing hashes), not diving too deep, see Hashcat for a rough definition.
+- **Jumpbox** - The one box that has the permissions to go through firewall and touch the DMZ from the internal network. This is a single point of access.
 - **MAC** - Not MAC address, but Mandatory Access Control. Resources are protected by inflexible rules. Think about labels. Secret/top secret, etc. SELinux implements MAC. Most other systems don't use this.
 - **Maltego** - Maltego is software used for open-source intelligence and forensics, developed by Paterva from Pretoria, South Africa. Maltego focuses on providing a library of transforms for discovery of data from open sources, and visualizing that information in a graph format, suitable for link analysis and data mining. This is taken from [Wikipedia](https://en.wikipedia.org/wiki/Maltego).
 - **Maturity Model** - Part of ESA framework for how mature the frameworks are. There's a common one that's 5 levels with level 1 being very reactive in terms of security.
 - **MEF** - Mission Essential Function. Functions that can't be deferred on the business side.
+- **Metasploit** - Allows a user to use known exploits to see if a server is vulnerable to that specific exploit.
 - **MFA** - Multifactor Authentication. Use a separate factor to authenticate (something you are, something you know, something you have, somewhere you are, etc.). Two passwords does not count as MFA. But a password + OTP counts.
 - **MITRE ATT&CK** - Essentially a database of all known attacks through all stages of the attack. This includes how to detect and stop these attacks.
 - **MOU** - Memorandum of Understanding -  Preliminary or exploratory agreement for parties to work together. This is not legally binding and doesn't involve monetary exchange.
@@ -73,12 +80,14 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **NVD** - National Vulnerability Database. Superset of CVE that includes more information (like remediation instructions).
 - **OpenVAS** - Open source vulnerability scanner that split off the Nessus codebase when Nessus became a commercial software.
 - **PAN** - Not personal access network (unless it's used in that context) but stands for Privileged Access Management (solution). This is used for credentialed vulnerability scanning where the credentials are one time use. This ensure the credentials no longer work after some set of criteria, though this solution also usually costs some amount of money. If you can't use a PAN solution, you can also do a set time period where a scan happens.
+- **pfSense** - Open source firewall solution. You can add logging, normal firewall rules, etc.
 - **PUA** - Privileged User Agreement. Code of conduct for high privileged employees with access to sensitive data etc.
 - **Qualys** - Cloud-based vulnerability management software. With installed sensors on base machines.
 - **RBAC** - Role-Based Access Control. Resources are protected by ACLs, managed by administrators. Think Windows groups.
 - **Reaver** - Wireless tool to attack WPS enabled networks. Can potentially crack a WPS pin (which is 8 digits long) within hours as long as it's not rate-limited.
 - **Red Team** - The attackers or pentesters that try to offensively attack a system. Contrast with the blue team.
 - **RFC** - Request For Change. What is sounds like - a document that gives the reason for a change and how to implement that change.
+- **ROT** - Root of Trust. Crypto module (hardware) embedded into a computer system that can endorse trusted execution. Think TPM module in your computer.
 - **RPO** - Recovery Point Objective. Longest time an organization can tolerate lost data being recoverable. Ex. a database goes down, and new data isn't recorded for 12 hours. That 12 hours is the RPO, and is that tolerable to the organization?
 - **RSOI** - Return on Security Investment. By adding this security control, what's the expected return? This is a ratio.
 - **RTO** - Recovery Time Objective. The time between systems going down to when it can be up again. Ex, if live databases all go down, how long does it take for them to recover?
@@ -86,6 +95,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **Sanitization** - Procedures that define how to dispose information or objects.
 - **Scan-Patch-Scan** - A common motto for IT - scan for vulnerabilities, patch it, then scan it again to verify the patch.
 - **SCAP** - A NIST framework that outlines various accepted practices for automating vulnerability scanning. This also sets the standard for the format the results/vulnerabilities come in.
+- **SDN** - Software Defined Networks. Use software to define physical networks. Also similar to "Code as Infrastructure."
 - **Separation of Duties** - Checks and balances on processes.
 - **Sigcheck** - Sysinternals utility that lets you verify local root certs with Microsoft's master trust list.
 - **SLA** - Service Level Agreement. A contractual agreement, contrast this to MOU. This is a legal contract, if someone offers a 99.9% uptime and only delivers 99% uptime, there could be monetary penalties built into the SLA.
@@ -95,6 +105,9 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **SOAR** - Security Orchestration, Automation, Response, basically think of this as a "next-gen" SIEM.
 - **SPF** - Sender Policy Framework. In emails, this can be used to verify the sender of an email is indeed on the IP list. Once an SFP record is setup, the email service will check the domain (ex. me@thomaszhang.com, so it'll check thomaszhang.com) for a txt record containing the IP addresses that's allowed. If the email came from an allowed IP address, that's likely legitimate. Read more [here](https://www.courier.com/guides/dmarc-vs-spf-vs-dkim/).
 - **Tabletop Exercises** - Simulated emergency situation on a table. But the downside is that the people don't go through the entire flow.
+- **TPM** - Trusted Platform Module. A secure hardware store of digital certificates, keys, hashed passwords, etc. These generally exist on all modern day computers. In fact, this is a requirement to install Windows 11.
+- **UEFI** - Unified Extensible Firmware Interface. During boot, this may show (on your 64 bit computer) with a full GUI and mouse/keyboard support. This runs at the firmware level (without an operating system).
+- **VPN** - Virtual Private Network. Uses authentication/authorization to control access. Uses an encrypted connection to some other network. This should be a familiar concept.
 - **Vulnerability Management Lifecycle** - Assessment, Prioritization, Act, Reassessment, Improvement. See more [here](https://heimdalsecurity.com/blog/vulnerability-management-lifecycle/) and [here](https://www.crowdstrike.com/cybersecurity-101/vulnerability-management/vulnerability-management-lifecycle/)
 - **White Team** - The team that supervises/administers/supports the blue/red team in the incident response training.
 - **WRT** - Work Recovery Time. Fixing the secondary effects after RTO period. Ex. if live databases go down, and critical functions are working, how long does it take to ensure analytics are back up.
