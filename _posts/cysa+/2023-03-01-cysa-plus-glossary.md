@@ -21,10 +21,12 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **Aircrack ng** - Bunch of wireless tools. Aircrack ng specifically allows you to "crack" WEP passwords.
 - **AUP** - Acceptable Use Policy. Policy that governs how employees can use company equipment and internet.
 - **ALE** - Annual Loss Expectancy. The expected cost to an organization for an event. Ex. if there's a 5% chance a laptop will need replacing, and it's $2,000k, then the ALE of that event (losing a laptop) is $100.
+- **BAS** - Building Automation System. Configuration and monitoring for the building. These can turn on/off the AC, or lights, heat, etc.
 - **BIA** - Business Impact Analysis. Identifies organizational risk. Ex. could be something physical like an office/data center that could be at risk for power going out, or virtual like RTO, RPO stats.
 - **Blue Team** - The defense side of security like the IT admins or cybersecurity analysts. Contrast this with the red team.
 - **Business Continuity Loss** - Can't fulfill contracts because of breakdown of infrastructure system. 
 - **CAB** - Change Advisory Board. Group of leaders in an org that have the technical know-how to approve a change.
+- **CAN** - (CAN bus) Controller Area Network. Don't confuse this with Campus Area Network.
 - **CAPEC** - Common Attack Pattern and Enumeration Classification. Knowledge base by MITRE that focuses on application security.
 - **CASB** - Cloud Access Security Broker - A Cloud Access Security Broker, or CASB, is cloud-hosted software or on-premises software or hardware that act as an intermediary between users and cloud service providers. See [this](https://www.skyhighsecurity.com/en-us/cybersecurity-defined/what-is-a-casb.html) for more details.
 - **CCE** - Common Configuration Enumeration. Scheme for secure configuration checks across multiple sources. Basically these are best practice statements.
@@ -32,6 +34,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **CDM** - Continuous Diagnostics and Mitigation - Helps US government agencies identify cybersecurity risks.
 - **CIS** - Center for Internet Security. Non profit that publishes wellknown "Top 20 Critical Security Controls." This org feels like a broader OWASP. 
 - **Compensating Control** - Secondary control that compensates the primary control. Ex. you may require a 16 digit password, but if the system doesn't allow for more than 12 digits, a compensating control could be to add 2FA.
+- **COSO** - Committee of Sponsoring Organizations of the Treadway Commission. Provides guidance on governance-related topics like fraud, controls, finance, and ethics. These are best practices (not a regulation or law).
 - **Core Impact** - Penetration testing tool.
 - **CPE** - Common Platform Enumeration - scheme that nmap, or any other tool, can use to fingerprint/identify hardware devices, OS version, applications, etc. This is developed by MITRE.
 - **CVE** - Common Vulnerabilities and Exposures. Scheme for identifying vulnerabilities. This was developed by MITRE and adopted by NIST. CVE-YYYY-### (this is how CVEs are identified, YYYY is the year).
@@ -48,16 +51,22 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **ERM** - Enterprise Risk Management.
 - **ESA** - Enterprise Service Architecture. A framework for defining baselines, goals and methods used to secure a business.
 - **Fast Assessment Scan** - Fast version of a vulnerability scan (versions of hosts, minor vulnerabilities/ configuration issues).
+- **Fieldbus** - Used in OT networks to link PLCs.
 - **Fingerprinting** - Mapping out the layout of a device (open ports, OS version etc.). Contrast this to footprinting.
+- **FISMA** - Federal Information Security Management Act. Requirements for federal organizations to adopt information assurance controls.
 - **Footprinting** - Mapping out the layout of the network. We're not focused on the details of a single device. Contrast this to fingerprinting.
+- **FPGA** - Field Programmable Gate Array. A processor that can be programmed for a function that a customer wants, rather than being set by the manufacturer.
 - **Full Assessment Scan** - Fully scans every single host. It's a lot more intrusive.
 - **Full Disclosure Mailing List** - A public, vendor-neutral forum for detailed discussion of vulnerabilities and exploitation techniques, as well as tools, papers, news, and events of interest to the community. The relaxed atmosphere of this quirky list provides some comic relief and certain industry gossip. More importantly, fresh vulnerabilities sometimes hit this list many hours or days before they pass through the Bugtraq moderation queue. See the website [here](https://seclists.org/fulldisclosure/).
+- **GLBA** - Gramm-Leach-Bliley Act. Requirements that define an individual's financial information held at financial institutions and others.
 - **Hack Back** - Using offensive techniques to attack an attacker (potentially when they are in a honeypot). This is usually not allowed at most organizations. There are legal repercussions potentially.
 - **Hardening** - Reduce attack service. Remove or disable anything that's unneeded, use least privilege. Always update the system, patch it. Uninstall unnecessary network protocols, enforce ACL, etc.
 - **Hashcat** - Password cracking tool (for passive cracking) of hashes. Installed by default on Kali Linux. Similar to John the Ripper.
+- **HMI** - Human Machine Interface. Ex a button, knobs, keystrokes, screens.
 - **Honeypot** - A host or server that's setup to lure an attacker to it. Ex. it might have x amount of bitcoin, or it has fake passwords, it will allow a security analyst to look at the attacker's behavior.
 - **hPing** - Open source packet generator. Allows the user to craft packets.
 - **HSM** - Hardware Security Module. Appliance that is used to generate and store keys that is less susceptible to tampering than software solutions.
+- **ICS** - Industrial Control System. Network that manages embedded devices.
 - **IoC** - Indicators of Compromise.
 - **John the Ripper** - Password cracking tool (reversing hashes), not diving too deep, see Hashcat for a rough definition.
 - **Jumpbox** - The one box that has the permissions to go through firewall and touch the DMZ from the internal network. This is a single point of access.
@@ -68,6 +77,7 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **Metasploit** - Allows a user to use known exploits to see if a server is vulnerable to that specific exploit.
 - **MFA** - Multifactor Authentication. Use a separate factor to authenticate (something you are, something you know, something you have, somewhere you are, etc.). Two passwords does not count as MFA. But a password + OTP counts.
 - **MITRE ATT&CK** - Essentially a database of all known attacks through all stages of the attack. This includes how to detect and stop these attacks.
+- **Modbus** - A communication protocol used in operational technology networks. Contrast this to TCP/IP - Modbus is a different way of thinking.
 - **MOU** - Memorandum of Understanding -  Preliminary or exploratory agreement for parties to work together. This is not legally binding and doesn't involve monetary exchange.
 - **MTBF** - Mean Time Between Failures. How long do we expect a system to last? Ex. hard drives might only be expected to last 10 years before failing.
 - **MTD** - Maximum Tolerable Downtime. Max time a business can be down without irrevocable business failure.
@@ -79,8 +89,11 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **NSE** - Nmap Scripting Engine - Lua based scripting engine for Nmap to carry out detailed probes.
 - **NVD** - National Vulnerability Database. Superset of CVE that includes more information (like remediation instructions).
 - **OpenVAS** - Open source vulnerability scanner that split off the Nessus codebase when Nessus became a commercial software.
+- **OT** - Operational Technology. Think manufacturing plants. These prioritize availability and integrity, less so on confidentiality.
+- **PACS** - Physical Access Control System. Components that facilitate the centralized monitoring of security mechanisms within offices and data centers.
 - **PAN** - Not personal access network (unless it's used in that context) but stands for Privileged Access Management (solution). This is used for credentialed vulnerability scanning where the credentials are one time use. This ensure the credentials no longer work after some set of criteria, though this solution also usually costs some amount of money. If you can't use a PAN solution, you can also do a set time period where a scan happens.
 - **pfSense** - Open source firewall solution. You can add logging, normal firewall rules, etc.
+- **PLC** - Programmable Logic Controller. Computer designed for industrial settings. Think about manufacturing.
 - **PUA** - Privileged User Agreement. Code of conduct for high privileged employees with access to sensitive data etc.
 - **Qualys** - Cloud-based vulnerability management software. With installed sensors on base machines.
 - **RBAC** - Role-Based Access Control. Resources are protected by ACLs, managed by administrators. Think Windows groups.
@@ -91,8 +104,10 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **RPO** - Recovery Point Objective. Longest time an organization can tolerate lost data being recoverable. Ex. a database goes down, and new data isn't recorded for 12 hours. That 12 hours is the RPO, and is that tolerable to the organization?
 - **RSOI** - Return on Security Investment. By adding this security control, what's the expected return? This is a ratio.
 - **RTO** - Recovery Time Objective. The time between systems going down to when it can be up again. Ex, if live databases all go down, how long does it take for them to recover?
+- **RTOS** - Real Time Operating System. Prioritizes deterministic execution of operations to ensure consistent responses. Can't tolerate downtime - can't be down.
 - **Runbook** - Automated version of a playbook.
 - **Sanitization** - Procedures that define how to dispose information or objects.
+- **SCADA** - Supervisory Control and Data Acquisition. Industrial control system (ICS) that manages large-scale, multiple-site devices and equipment spread across some geographic location.
 - **Scan-Patch-Scan** - A common motto for IT - scan for vulnerabilities, patch it, then scan it again to verify the patch.
 - **SCAP** - A NIST framework that outlines various accepted practices for automating vulnerability scanning. This also sets the standard for the format the results/vulnerabilities come in.
 - **SDN** - Software Defined Networks. Use software to define physical networks. Also similar to "Code as Infrastructure."
@@ -103,6 +118,8 @@ As I go through course material, study sessions, exploratory sessions, I will li
 - **SNORT** - Open source IDS. 
 - **SSO** - Single Sign On. One password to rule them all.
 - **SOAR** - Security Orchestration, Automation, Response, basically think of this as a "next-gen" SIEM.
+- **SoC** - System on a chip. Efficient by combining different components on the same chip. Think single board computers like Raspberry Pi.
+- **SOX** - Sarbanes-Oxley Act. Rules that define storage and retention requirements for publicly traded companies.
 - **SPF** - Sender Policy Framework. In emails, this can be used to verify the sender of an email is indeed on the IP list. Once an SFP record is setup, the email service will check the domain (ex. me@thomaszhang.com, so it'll check thomaszhang.com) for a txt record containing the IP addresses that's allowed. If the email came from an allowed IP address, that's likely legitimate. Read more [here](https://www.courier.com/guides/dmarc-vs-spf-vs-dkim/).
 - **Tabletop Exercises** - Simulated emergency situation on a table. But the downside is that the people don't go through the entire flow.
 - **TPM** - Trusted Platform Module. A secure hardware store of digital certificates, keys, hashed passwords, etc. These generally exist on all modern day computers. In fact, this is a requirement to install Windows 11.
