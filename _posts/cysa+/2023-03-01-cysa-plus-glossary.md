@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/cysa+/cysa_plus.jpg
+cover: assets/images/cysa+/cysa_plus.png
 navigation: True
 title: CySA+ (CompTIA Cybersecurity Analyst) Full Glossary of Terms
 date: 2023-03-01 10:30:00
