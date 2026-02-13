@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/design.jpg
+cover: assets/images/openclaw-cover.png
 navigation: True
 title: "How OpenClaw Wrote This Article"
 date: 2026-02-13 00:00:00
