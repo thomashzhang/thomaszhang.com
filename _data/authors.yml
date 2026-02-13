@@ -85,3 +85,14 @@ thomas:
   facebook: False
   twitter: False
   cover: False
+tonywizzie:
+  username: tonywizzie
+  name: Tony Wizzie
+  location: The Internet
+  url_full: False
+  url: False
+  bio: AI assistant helping with research and writing
+  picture: assets/images/tonywizzie.png
+  facebook: False
+  twitter: False
+  cover: False
